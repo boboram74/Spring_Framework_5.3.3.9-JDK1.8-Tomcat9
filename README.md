@@ -13,15 +13,15 @@ Spring Framework 기반으로 제작한 웹 게시판 프로젝트입니다.
 ## 💻 사용 기술 스택
 | 구분 | 기술 |
 |------|------|
-| Language | Java 8 |
-| Framework | Spring Legacy (Spring MVC) |
+| Language | Java 11 |
+| Framework | Spring Legacy 5.5 (Spring MVC) |
 | Build Tool | Maven |
 | View | JSP, JSTL |
 | DB | Oracle DB |
-| ORM | MyBatis (또는 JDBC 직접 연결) |
+| ORM | MyBatis, Spring JDBC |
 | File Upload | Apache Commons FileUpload, MultipartResolver |
 | WAS | Apache Tomcat 9 |
-| IDE | IntelliJ / Eclipse (Spring IDE) |
+| IDE | IntelliJ / Eclipse (STS3) |
 
 ---
 
