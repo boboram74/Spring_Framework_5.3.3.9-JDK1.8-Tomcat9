@@ -18,7 +18,7 @@ Spring Framework 기반으로 제작한 웹 게시판 프로젝트입니다.
 | Language        | Java 11                                           |
 | Framework       | Spring Legacy 5.5 (Spring MVC)                   |
 | Build Tool      | Maven                                             |
-| Front-End       | **JSP, jQuery, AJAX**                             |
+| Front-End       | JSP, jQuery, AJAX                                 |
 | Database        | Oracle DB                                         |
 | ORM/DB Access   | MyBatis, Spring JDBC                              |
 | File Upload     | Apache Commons FileUpload, MultipartResolver     |
