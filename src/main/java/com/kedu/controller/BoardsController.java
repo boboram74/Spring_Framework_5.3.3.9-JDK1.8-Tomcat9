@@ -129,7 +129,7 @@ public class BoardsController {
 		if (endNavi > pageTotalCount) {
 			endNavi = pageTotalCount;
 		}
-
+		//완료!
 		boolean needPrev = true;
 		boolean needNext = true;
 		if (startNavi == 1) {
@@ -140,7 +140,7 @@ public class BoardsController {
 		}
 
 		List<BoardsDTO> list = boardsDAO.selectFromto(start, end);
-		Map<String, Object> dto = new HashMap<>();
+		Map<String, Object> dto = new HashMap<String, Object>();
 		
 		dto.put("startNavi", startNavi);
 		dto.put("endNavi", endNavi);
