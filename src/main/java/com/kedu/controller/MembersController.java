@@ -9,17 +9,15 @@ import javax.servlet.http.HttpSession;
 import com.kedu.service.MembersService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.kedu.dao.FileDAO;
 import com.kedu.dao.MembersDAO;
 import com.kedu.dto.FileDTO;
 import com.kedu.dto.MembersDTO;
+import utils.Encryption;
+import utils.Statics;
 
 @Controller
 @RequestMapping("/members")
@@ -51,6 +49,7 @@ public class MembersController {
 	public String login(String id, String pw) {
 		MembersDTO result = membersService.login(id,pw);
 		if(result != null) {
+			System.out.println("로그인성공!");
 			session.setAttribute("dto", result);
 		}
 		return "redirect:/";

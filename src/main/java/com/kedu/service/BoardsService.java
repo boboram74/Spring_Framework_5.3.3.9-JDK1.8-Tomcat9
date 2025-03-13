@@ -45,10 +45,6 @@ public class BoardsService {
         return boardsDAO.deleteById(id);
     }
 
-    public int getSeq() {
-        return boardsDAO.getSeq();
-    }
-
     public int createById(BoardsDTO dto) {
         return  boardsDAO.createById(dto);
     }

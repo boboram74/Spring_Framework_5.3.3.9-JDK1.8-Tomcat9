@@ -5,8 +5,10 @@ import com.kedu.dao.MembersDAO;
 import com.kedu.dto.MembersDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.multipart.MultipartFile;
 import utils.Encryption;
+import utils.Statics;
 
 import java.io.File;
 import java.util.UUID;

@@ -50,9 +50,8 @@ public class BoardsController {
 
 	@PostMapping("/insert") //게시글 작성처리
 	public String insert(BoardsDTO dto, MultipartFile[] files) throws Exception {
-		int parent_seq = boardsService.getSeq();
-		dto.setSeq(parent_seq);
 		int result = boardsService.createById(dto);
+		int parent_seq = dto.getSeq();
 		String realPath = session.getServletContext().getRealPath("upload");
 		int upload_result = boardsService.insert(dto,realPath,files,parent_seq);
 		return "redirect:/boards/toBoard";
