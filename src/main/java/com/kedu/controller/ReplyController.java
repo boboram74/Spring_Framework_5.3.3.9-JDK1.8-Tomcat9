@@ -20,5 +20,4 @@ public class ReplyController {
 		System.out.println(dto.getWriter() + ": " + dto.getContent());
 		return "";
 	}
-
 }

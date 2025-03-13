@@ -48,12 +48,12 @@ public class MembersDAO {
 		return this.jdbc.update(sql, dto.getName(), dto.getContact(), dto.getId());
 	}	
 	
-	public int deleteById(String id) throws Exception { //Delete
+	public int deleteById(String id) { //Delete
 		String sql = "delete from members where id = ?";
 		return jdbc.update(sql, id);
 	}
 	
-	public boolean checkDuplicateId(String id) throws Exception {
+	public boolean checkDuplicateId(String id) {
         String sql = "select count(*) from members where id = ?";
         int result = jdbc.queryForObject(sql, Integer.class, id);
         return result > 0;
