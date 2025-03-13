@@ -20,7 +20,7 @@ Spring Framework 기반으로 제작한 웹 게시판 프로젝트입니다.
 | Build Tool      | Maven                                             |
 | Front-End       | JSP, jQuery, AJAX                                 |
 | Database        | Oracle DB                                         |
-| ORM/DB Access   | MyBatis, Spring JDBC                              |
+| DB Access   | MyBatis                                              |
 | File Upload     | Apache Commons FileUpload, MultipartResolver     |
 | WAS             | Apache Tomcat 9                                   |
 | IDE             | IntelliJ / Eclipse (Spring Tool Suite 3)         |
