@@ -35,7 +35,7 @@ public class FileController {
 		dto.put("list", list);
 		return list;
 	}
-	@GetMapping("/download") //다운로드
+	@GetMapping("/download") //다운로드(컨트롤러에 구현하는게 합리적)
 	public void download(String sysName, String oriName, HttpServletResponse response, HttpSession session) throws Exception {
 		String realPath = session.getServletContext().getRealPath("upload");
 		File target = new File(realPath + "/"+ sysName);
