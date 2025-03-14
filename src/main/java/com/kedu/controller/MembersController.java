@@ -49,7 +49,6 @@ public class MembersController {
 	public String login(String id, String pw) {
 		MembersDTO result = membersService.login(id,pw);
 		if(result != null) {
-			System.out.println("로그인성공!");
 			session.setAttribute("dto", result);
 		}
 		return "redirect:/";
