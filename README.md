@@ -1,4 +1,4 @@
-# 📌 Spring Legacy 게시판 기본기능 + 프로필사진 업로드 + 파일업로드 프로젝트
+# 📌 Spring Legacy 게시판 프로젝트
 
 ## 🔍 프로젝트 소개
 Spring Framework 기반으로 제작한 웹 게시판 프로젝트입니다.  
