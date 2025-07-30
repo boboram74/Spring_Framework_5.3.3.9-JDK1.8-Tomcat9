@@ -25,5 +25,5 @@
 		<beans:property name="maxUploadSize" value="10485760"></beans:property><!-- 파일 용량 제한(10MB) -->
 	</beans:bean>
 	
-	<context:component-scan base-package="com.kedu.controller" />
+	<context:component-scan base-package="com.study.controller" />
 </beans:beans>
